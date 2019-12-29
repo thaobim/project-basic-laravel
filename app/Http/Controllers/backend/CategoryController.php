@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     function getCategory(){
+        //Set Sesstion
         $_SESSION["current_page"] = "category";
         return view('backend\category\category');
     }
